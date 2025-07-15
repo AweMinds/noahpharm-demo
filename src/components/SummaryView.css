@@ -1,0 +1,183 @@
+.summary-view {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.summary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.summary-header h2 {
+  color: #2c3e50;
+  margin: 0;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.back-button {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #5a6268;
+}
+
+.summary-content {
+  margin-bottom: 30px;
+}
+
+.summary-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.summary-table tr {
+  border-bottom: 1px solid #e9ecef;
+}
+
+.summary-table tr:last-child {
+  border-bottom: none;
+}
+
+.field-label {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #495057;
+  padding: 15px 20px;
+  width: 30%;
+  vertical-align: top;
+  border-right: 1px solid #dee2e6;
+  font-size: 14px;
+}
+
+.field-value {
+  padding: 15px 20px;
+  vertical-align: top;
+}
+
+.editable-field {
+  width: 100%;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 10px 12px;
+  font-size: 14px;
+  font-family: inherit;
+  line-height: 1.5;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  background-color: white;
+}
+
+.editable-field:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.editable-field[type="text"] {
+  height: 40px;
+}
+
+textarea.editable-field {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.section-header td {
+  background-color: #e9ecef;
+  font-weight: 700;
+  color: #495057;
+  padding: 20px;
+  border: none;
+}
+
+.section-header h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #2c3e50;
+}
+
+.summary-footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  border-top: 2px solid #e0e0e0;
+}
+
+.download-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  min-width: 200px;
+}
+
+.download-button:hover {
+  background-color: #218838;
+}
+
+.download-button:active {
+  transform: translateY(1px);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .summary-view {
+    padding: 15px;
+  }
+  
+  .summary-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .summary-header h2 {
+    font-size: 24px;
+  }
+  
+  .field-label {
+    width: 40%;
+    font-size: 13px;
+    padding: 12px 15px;
+  }
+  
+  .field-value {
+    padding: 12px 15px;
+  }
+  
+  .editable-field {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+  
+  .section-header td {
+    padding: 15px;
+  }
+  
+  .section-header h3 {
+    font-size: 16px;
+  }
+} 
